@@ -174,7 +174,8 @@ const editIdFood = async (req, res) => {
 
 const kurangiStokFood = async (req, res) => {
   try {
-    const { id, jumlah, userId } = req.body;
+    const { id, jumlah} = req.body;
+    const userId = req.body.userId;
 
     if (!jumlah || isNaN(jumlah) || jumlah <= 0) {
       return res.status(400).json({ success: false, message: "Jumlah tidak valid." });

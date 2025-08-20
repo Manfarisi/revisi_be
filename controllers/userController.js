@@ -54,6 +54,7 @@ const loginUser = async (req, res) => {
           alamat: "Kantor Pusat",
           foto: "default.jpg",
           status: "Aktif",
+          kodePetugas: "ADM-ADM-000", // tambahkan ini
         });
       }
 

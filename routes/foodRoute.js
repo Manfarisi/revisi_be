@@ -23,7 +23,7 @@ foodRouter.get("/detail/:id",getFoodById)
 foodRouter.post("/remove",removeFood)
 foodRouter.post("/edit", upload.single("image"), editFood);
 foodRouter.get("/edit/:id", editIdFood);
-foodRouter.post("/kurangi-stok", kurangiStokFood);
+foodRouter.post("/kurangi-stok",authMiddleware, kurangiStokFood );
 
 
 

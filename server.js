@@ -25,8 +25,8 @@ app.use(express.urlencoded({ extended: true }));
 // vercel
 
 const allowedOrigins = [
-  'https://revisi-fe.vercel.app/',
-  // 'http://localhost:5173'
+  // 'https://revisi-fe.vercel.app/',
+   'http://localhost:5173'
 ];
 // railway
 app.use(cors({
