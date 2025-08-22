@@ -17,10 +17,11 @@ const approveUser = async (req, res) => {
   const { id } = req.params;
   try {
     const user = await userModel.findById(id);
-    if (!user)
+    if (!user) {
       return res
         .status(404)
         .json({ success: false, message: "User not found" });
+    }
 
     user.status = "Aktif";
     await user.save();
@@ -31,6 +32,7 @@ const approveUser = async (req, res) => {
     res.status(500).json({ success: false, message: "Failed to approve user" });
   }
 };
+
 
 // Login user
 const loginUser = async (req, res) => {
