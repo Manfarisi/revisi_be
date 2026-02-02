@@ -49,7 +49,7 @@ const loginUser = async (req, res) => {
           email: ADMIN_EMAIL,
           password: hashedPassword,
           kategori: "Admin",
-          bagian: "Admin", // Bagian untuk admin
+          bagian: "Admin", 
           namaLengkap: "Administrator Sistem",
           jenisKelamin: "Laki-laki",
           noTelepon: "0000000000",
