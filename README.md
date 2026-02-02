@@ -37,7 +37,7 @@ Designed to support frontend dashboard & reporting
 ---
 
 ### ✅ Frontend Repo Description
-https://github.com/Manfarisi/revisi_fe
+https://github.com/Manfarisi/cashier-management-frontend
 
 ---
 
